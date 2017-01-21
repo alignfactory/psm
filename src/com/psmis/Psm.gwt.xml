@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD GWT 2.7.0//EN" "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
+    
+<module rename-to='psm'>
+
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.sencha.gxt.ui.GXT' />
+	
+	<!--  google 의 json을 기반으로 오브젝트를 자동생성하는 기능  -->
+	<inherits name="com.google.web.bindery.autobean.AutoBean"/>
+	
+	<stylesheet src="reset.css" />
+	<inherits name='com.sencha.gxt.theme.neptune.Theme' />
+
+	<!-- Specify the application entry point class. -->
+	<entry-point class='com.psmis.client.Psm'/>
+
+	<source path='client' />
+	<source path='shared' />
+
+	<!-- allow Super Dev Mode -->
+	<add-linker name="xsiframe"/>
+	  
+ 	<collapse-all-properties />
+</module>
